@@ -14,6 +14,7 @@ export type AppRouteObject = {
 const Home = lazy(() => import('@/pages/Home'));
 const TicTacToe = lazy(() => import('@/pages/TicTacToe'));
 const Game2048 = lazy(() => import('@/pages/Game2048'));
+const GreedySnake = lazy(() => import('@/pages/GreedySnake'));
 
 export const routes: AppRouteObject[] = [
   {
@@ -33,6 +34,11 @@ export const routes: AppRouteObject[] = [
         path: '2048',
         element: <Game2048 />,
         meta: { title: '2048' },
+      },
+      {
+        path: 'greedysnake',
+        element: <GreedySnake />,
+        meta: { title: '贪吃蛇' },
       },
     ],
   },
