@@ -1,4 +1,4 @@
-import TicTacToe from '../../components/tictactoe';
+import TicTacToe from '../../components/TicTacToe';
 import { Link } from 'react-router-dom';
 
 export default function TicTacToePage() {
